@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&display=swap" rel="stylesheet"> 
+    <title>Formulaire de contact</title>
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="Association.html">Accueil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Evénements</a>
+                <a class="nav-link" href="Formulaire.html">Nous rejoindre</a>
+                <a class="nav-link" href="aide.html">Nous aider</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="contact-wrapper">
+      <form class="form-horizontal" method="post" action="contact.php">
+        <h1 class="section-header">Merci de nous rejoindre dans notre quête !</h1>
+
+        <label for="name">Nom</label>
+        <input type="text" id="name" placeholder="nom" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="email@mail.com" name="email" required>
+        
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" placeholder="0600000000" name="phone">
+
+        <label for="category">Catégorie de question</label>
+        <select id="category" name="category">
+          <option value="default">Choisissez une catégorie</option>
+          <option value="recruitment">Recrutement</option>
+          <option value="pro-contact">Contact professionnel</option>
+          <option value="donation">Donation</option>
+          <option value="question">Poser des questions</option>
+        </select>
+        
+        <label for="message">Message</label>
+        <textarea rows="10" id="message" name="message" required></textarea>
+
+        <button class="send-button" id="submit" type="submit">Envoyer</button>
+
+        <div class="advert-wrapper">
+          <p>Souhaitez-vous recevoir nos news ?</p>
+          <input type="radio" id="yes" name="news-question" value="yes" checked>
+          <label for="yes">Oui</label>
+          <input type="radio" id="no" name="news-question" value="no">
+          <label for="no">Non</label>
+        </div>
+      </form>
+    </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+  integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+  integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+  crossorigin="anonymous"></script>
+
+</body>
+</html>
