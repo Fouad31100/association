@@ -1,0 +1,25 @@
+/* Corps */
+
+body
+{
+    height: 40%;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Naviagtion */
+
+nav a
+{
+    font-size: 1.3em;
+    color: black;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+.navbar-brand img
+{
+    max-height: 70px;
+}
