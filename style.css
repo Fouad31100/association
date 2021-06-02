@@ -1,15 +1,17 @@
 /* Eléments principaux de la page */
 
-body
+html, body
 {
-    background: url('images/fond_jaune.png');
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(243,246,247,1) 0%, rgba(224,232,237,1) 21%, rgba(9,64,121,1) 88%); 
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
+    font-size: 1em;
 }
 
-#container_fluid
+#container-fluid
 {
-    width: 900px;
+    width: 100px;
     margin: auto;
 }
 
@@ -20,17 +22,15 @@ section h1, footer h1, nav a
     text-transform: uppercase;
 }
 
-.navbar-brand img
-{
-    max-height: 70px;
-}
+/* Header */
 
 header
 {
-    background: url('images/separateur.png') repeat-x bottom;
+    background: url('separateur.png') repeat-x bottom;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 50px;
 }
 
 #titre_principal
@@ -60,14 +60,42 @@ header h1
     margin: 0 0 0 10px;
 }
 
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Navigation */
+
+nav
+{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(243,246,247,1) 0%, rgba(224,232,237,1) 21%, rgba(9,64,121,1) 88%); 
+}
+
+nav a
+{
+    font-size: 1em;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+.navbar-brand img
+{
+    max-height: 50px;
+}
+
 /* Bannière */
 
 #banniere_image
 {
-    margin-top: 15px;
-    height: 200px;
+    margin-top: 20px;
+    height: 640px;
     border-radius: 5px;
-    background: url('images/sanfrancisco.jpg') no-repeat;
+    background: url('pauvre.jpg') no-repeat;
     position: relative;
     box-shadow: 0px 4px 4px #1c1a19;
     margin-bottom: 25px;
@@ -78,23 +106,24 @@ header h1
     position: absolute;
     bottom: 0;
     border-radius: 0px 0px 5px 5px;
-    width: 99.5%;
-    height: 33px;
+    width: 100%;
+    height: 30px;
     padding-top: 15px;
     padding-left: 4px;
-    background-color: rgba(24,24,24,0.8);
+    background-color: rgba(24, 24, 24, 0.301);
     color: white;
     font-size: 0.8em;
+    text-align: center;
     
 }
 
 .bouton_rouge
 {
-    height: 25px;
+    height: px;
     position: absolute;
     right: 5px;
     bottom: 5px;
-    background: url('images/fond_degraderouge.png') repeat-x;
+    background: url('fond_degraderouge.png') repeat-x;
     border: 1px solid #760001;
     border-radius: 5px;
     font-size: 1.2em;
@@ -129,12 +158,6 @@ article
     flex: 3;
 }
 
-.ico_categorie
-{
-    vertical-align: middle;
-    margin-right: 8px;
-}
-
 article p
 {
     font-size: 0.8em;
@@ -144,12 +167,18 @@ aside
 {
     flex: 1.2;
     position: relative;
-    background-color: #706b64;
+    background-color: black;
     box-shadow: 0px 2px 5px #1c1a19;
     border-radius: 5px;
     padding: 10px;
     color: white;
     font-size: 0.9em;
+}
+
+aside h1
+{
+    font-size: 2em;
+    text-align: center;
 }
 
 #fleche_bulle
@@ -159,12 +188,12 @@ aside
     left: -12px;
 }
 
-#photo_zozor
+#photo_entraide
 {
     text-align: center;
 }
 
-#photo_zozor img
+#photo_entraide img
 {
     border: 1px solid #181818;
 }
@@ -175,34 +204,22 @@ aside img
 }
 
 
+/* Footer */
 
+footer
+{
+    position: center;
+}
 
+footer p
+{
+    color: black;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Corps */
-
+@media screen and (max-widht: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
