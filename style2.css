@@ -7,8 +7,20 @@ body
       font-family: Georgia, 'Times New Roman', Times, serif;
       margin: 0;
       padding: 0;
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(243,246,247,1) 0%, rgba(224,232,237,1) 21%, rgba(9,64,121,1) 88%); 
   }
 
+  section
+  {
+      display: flex;
+      margin-bottom: 20px;
+  }
+
+  .carousel-item
+  {
+    justify-items: center;
+  }
 /* Naviagtion */
 
 nav
